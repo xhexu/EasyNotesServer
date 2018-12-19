@@ -1,0 +1,23 @@
+{
+    "tags": [{
+            "tagId": "001",
+            "tagName": "Vue"
+        },
+        {
+            "tagId": "002",
+            "tagName": "NodeJS"
+        },
+        {
+            "tagId": "003",
+            "tagName": "JavaScript"
+        },
+        {
+            "tagId": "004",
+            "tagName": "AngularJS"
+        },
+        {
+            "tagId": "005",
+            "tagName": "其它"
+        }
+    ]
+}
