@@ -10,6 +10,12 @@ const cors = require('koa-cors')
 const staticPath = '../static/'
 const routers = require('./router/index')
 
+//logger
+app.use(async (ctx,next)=>{
+    await next()
+    console.log(`${ctx.method} ${ctx.url}`)
+})
+  
 app.use(cors())
 app.use(koaBody())
 app.use(static(path.join(__dirname, staticPath)))
@@ -22,6 +28,10 @@ app.on("error",(err,ctx)=>{
 process.on("uncaughtException", function(err){
     console.log("uncaughtException:",err.message)
 })
+process.on('unhandledRejection', (reason, p) => {
+    console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
+})
+
 app.listen(3000, () => {
     console.log('easy note server: start success')
 })

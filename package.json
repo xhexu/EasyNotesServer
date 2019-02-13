@@ -1,24 +1,25 @@
 {
-    "name": "koa2server",
-    "version": "1.0.0",
-    "description": "zero project server for node and koa2",
-    "main": "index.js",
-    "scripts": {
-        "test": "node test.js",
-        "dev": "node index.js"
-    },
-    "keywords": [
-        "koa2",
-        "node"
-    ],
-    "author": "hx",
-    "license": "ISC",
-    "dependencies": {
-        "koa-better-body": "^3.0.4",
-        "koa-body": "^4.0.4",
-        "koa-bodyparser": "^4.2.1",
-        "koa-cors": "^0.0.16",
-        "koa-router": "^7.4.0",
-        "koa-static": "^5.0.0"
-    }
+  "name": "koa2server",
+  "version": "1.0.0",
+  "description": "zero project server for node and koa2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "dev": "node server/server.js"
+  },
+  "keywords": [
+    "koa2",
+    "node"
+  ],
+  "author": "hx",
+  "license": "ISC",
+  "dependencies": {
+    "koa-better-body": "^3.0.4",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "koa-static": "^5.0.0"
+  }
 }

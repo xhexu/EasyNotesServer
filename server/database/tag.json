@@ -15,9 +15,14 @@
             "tagId": "004",
             "tagName": "AngularJS"
         },
-        {
+		{
             "tagId": "005",
+            "tagName": "构建工具"
+        },
+        {
+            "tagId": "006",
             "tagName": "其它"
         }
+		
     ]
 }
